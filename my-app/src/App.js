@@ -17,7 +17,7 @@ function App() {
 //  console.log(planData)
 
   React.useEffect(() =>{
-    console.log("setting")
+    // console.log(planData)
     localStorage.setItem("planData",JSON.stringify(planData))
   },[JSON.stringify(planData)])
   return (

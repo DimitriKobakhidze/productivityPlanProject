@@ -124,7 +124,10 @@ main{
   min-height: 400px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 7px;
+  padding-right: 7px;
   background-color: var(--milk);
 }
 .card-day{
@@ -137,30 +140,53 @@ main{
   background-color: #475B63;
 }
 .card-div ul{
-  padding: 20px;
+  padding-top: 20px;
+  padding-left: 5px;
+  padding-bottom: 20px;
 }
 .card-div ul li{
   font-size: 22px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #9DA2A9;
-  padding-bottom: 5px;
+  padding-bottom: 15px;
   height: fit-content;
   overflow-wrap:break-word;
   display: flex;
   align-items: center;
-  list-style-type:disc;
-  text-decoration: underline;
+  justify-content: space-between;
+  position: relative;
 }
 .delete-todo{
-  color: var(--darkMilk);
+  color: #475B63;
   font-size: 25px;
   pointer-events: none;
 }
-li span{
+.delete-span,.edit-span{
   cursor: pointer;
-  margin-left: 7px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+}
+.edit-span{
+  margin-right: 7px;
+}
+
+#time-span{
+  padding-right: 5px;
+  color: #888387;
+  font-weight: 700;
+}
+.work-span{
+  text-decoration: underline;
+}
+.time-work-div{
+  min-width: 80%;
+}
+.absolute-form{
+  position: absolute;
+  top: 0;
+  left: 30px;
+  background-color:#475B63;
+  z-index: 10;
 }
