@@ -149,7 +149,7 @@ main{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #9DA2A9;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   height: fit-content;
   overflow-wrap:break-word;
   display: flex;
@@ -189,4 +189,43 @@ main{
   left: 30px;
   background-color:#475B63;
   z-index: 10;
+}
+.add-between-button{
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%,0);
+  color: #475B63;
+  font-size: 25px;
+  display: none;
+}
+.add-icon{
+  pointer-events: none;
+}
+.new-absolute-form{
+  position: absolute;
+  background-color:#475B63;
+  bottom: -5px;
+  left:50%;
+  transform: translate(-50%,100%);
+  z-index: 10;
+}
+.card-div ul li:hover .add-between-button{
+  display: flex;
+}
+
+@media screen and (max-width:650px) {
+  .add-between-button{
+    display: flex;
+  }
+  .absolute-form{
+    top: 0px;
+    left: 20px;
+  }
+  .main-form{
+    padding: 15px;
+  }
+  .main-form input, .main-form select{
+    width: 250px;
+  }
 }
